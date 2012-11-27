@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table width="100%" border="1">
+  <tr>
+    <td width="15%">name</td>
+    <td width="15%">address</td>
+    <td width="15%">city</td>
+    <td width="15%">state_province</td>
+    <td width="15%">country</td>
+    <td width="25%">website</td>
+  </tr>
+	{% for author in author_list %}
+  <tr>
+    <td width="15%">{{ author.salutation }}</td>
+    <td width="15%">{{ publisher.address }}</td>
+    <td width="15%">{{ publisher.city }}</td>
+    <td width="15%">{{ publisher.state_province }}</td>
+    <td width="15%">{{ publisher.country }}</td>
+    <td width="25%">{{ publisher.website }}</td>
+  </tr>
+	{% endfor %}
+</table>
+</body>
+</html>
